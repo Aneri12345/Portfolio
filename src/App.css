@@ -1,0 +1,39 @@
+.laptop{
+  border-left: 33px solid rgb(53, 50, 50) ;
+  border-right: 33px solid rgb(53, 50, 50) ;
+  border-bottom: 37px solid rgb(53, 50, 50) ;
+  border-radius: 10px;
+  height: 70vh;
+}
+.header{
+  background-color: rgb(53, 50, 50);
+  border-radius: 0px;
+  height: 35px;
+}
+.body{
+  background-image: url("https://res.cloudinary.com/dzqhcry3r/image/upload/v1610279103/Portfolio/Background_pakpmr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background_l{
+  background-repeat: no-repeat;
+  background-size:fill  ;
+  height:60.2vh;
+  width: 60.2vw;
+}
+.border_grey{
+  border-color:30px solid rgb(53, 50, 50)  ;
+}
+.folder{
+  height: 6vh;
+  width: 8vh;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px black;
+}
+.shadow-text{
+  box-shadow: 5px black;
+}
+.date_time{
+  margin-top: 13%;
+  position: relative;
+}
