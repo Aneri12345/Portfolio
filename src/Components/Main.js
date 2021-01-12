@@ -3,6 +3,20 @@ import { Card, CardOverlay, CardBody, CardFooter, CardHeader, CardImgOverlay } f
 import Home_L from './Home_L';
 import Desktop_L from './Desktop_L';
 class Main extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            show : props.show
+        }
+    }
+
+    componentDidMount(){
+        this.setState({
+            show: <Desktop_L />
+        })
+    }
+
     render() {
         return (
             <div className="background">
@@ -14,7 +28,7 @@ class Main extends Component {
                                 <img src="images\Camera.jpg" className="rounded-circle mb-2" style={{ height: "28px", width: "28px"}}></img>
                             </CardHeader>
                             <div style={{ overflowY: 'auto', overflowX: 'hidden' }}>
-                                <Desktop_L />
+                                {this.state.show}
                             </div>
                         </Card>
                     </div>

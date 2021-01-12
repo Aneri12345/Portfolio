@@ -25,8 +25,8 @@
   border-color:30px solid rgb(53, 50, 50)  ;
 }
 .folder{
-  height: 6vh;
-  width: 8vh;
+  height: 5vh;
+  width: 3vw;
   border-radius: 5px;
   box-shadow: 0px 0px 15px black;
 }
@@ -36,4 +36,8 @@
 .date_time{
   margin-top: 13%;
   position: relative;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
 }
