@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Card, CardOverlay, CardBody, CardFooter, CardHeader, CardImgOverlay } from 'reactstrap'
 import Home_L from './Home_L';
 import Desktop_L from './Desktop_L';
+import AboutMe_L from './AboutMe_L';
+
 class Main extends Component {
 
     constructor(props){
@@ -28,7 +30,8 @@ class Main extends Component {
                                 <img src="images\Camera.jpg" className="rounded-circle mb-2" style={{ height: "28px", width: "28px"}}></img>
                             </CardHeader>
                             <div style={{ overflowY: 'auto', overflowX: 'hidden' }}>
-                                {this.state.show}
+                                <AboutMe_L/>
+                                {/* {this.state.show} */}
                             </div>
                         </Card>
                     </div>

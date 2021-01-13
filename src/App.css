@@ -40,4 +40,6 @@
 
 .zoom:hover {
   transform: scale(1.3);
-}
+} 
+.static { position:absolute;}       
+.static:hover { opacity:0; }

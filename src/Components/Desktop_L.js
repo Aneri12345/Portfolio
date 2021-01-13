@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardFooter, CardImg, CardImgOverlay, Button } from 'reactstrap';
 import Main from './Main';
 import Home_L from './Home_L';
+import AboutMe_L from './AboutMe_L';
+
 class Desktop_L extends Component {
 
     constructor(props) {
@@ -49,7 +51,7 @@ class Desktop_L extends Component {
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="bio" className="folder ml-5"></img>
-                                <h6 className="text-light d-flex justify-content-center ml-5">Bio </h6>
+                                <h6 className="text-light d-flex justify-content-center ml-5">About Me</h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
