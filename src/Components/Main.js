@@ -3,6 +3,7 @@ import { Card, CardOverlay, CardBody, CardFooter, CardHeader, CardImgOverlay } f
 import Home_L from './Home_L';
 import Desktop_L from './Desktop_L';
 import AboutMe_L from './AboutMe_L';
+import ContactMe from './ContactMe';
 
 class Main extends Component {
 
@@ -30,7 +31,7 @@ class Main extends Component {
                                 <img src="images\Camera.jpg" className="rounded-circle mb-2" style={{ height: "28px", width: "28px"}}></img>
                             </CardHeader>
                             <div style={{ overflowY: 'auto', overflowX: 'hidden' }}>
-                                <AboutMe_L/>
+                                <ContactMe/>
                                 {/* {this.state.show} */}
                             </div>
                         </Card>

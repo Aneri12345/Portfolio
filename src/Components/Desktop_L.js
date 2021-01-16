@@ -13,31 +13,47 @@ class Desktop_L extends Component {
             getDate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
         var today = new Date(),
             getTime = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-            
+
         this.state = {
             redirect: false,
             date: getDate,
             time: getTime,
-            home: <Home_L/>,
+            home: false,
+            aboutMe: false,
+            projects: false,
+            achievements: false,
+            experience: false,
+            contactMe: false
         }
 
         this.redirect = this.redirect.bind(this);
     }
 
-    redirect(event){
+    redirect(event) {
         var target = event.target.id;
+        alert(target);
         this.setState({
             redirect: true,
-            redirectTo:target,
+            [target]: true
         })
     }
 
     render() {
-        if(this.state.redirect){
-            return(
-                    <Home_L/>
-                )
-            }
+        if (this.state.redirect) {
+            if (this.state.home) {
+                return ( <Home_L /> )
+            } else if(this.state.aboutMe){
+                return( <AboutMe_L/> )
+            } else if(this.state.projects){
+                return( <AboutMe_L/> )
+            } else if(this.state.achievements){
+                return( <AboutMe_L/> )
+            } else if(this.state.experience){
+                return( <AboutMe_L/> )
+            } else if(this.state.contactMe){
+                return( <AboutMe_L/> )
+            } 
+        }
         return (
             <div className="border_grey">
                 <Card>
@@ -46,31 +62,31 @@ class Desktop_L extends Component {
                     <CardImgOverlay>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
-                                <img src="images\Folder.png" className="folder" id={this.state.home} onClick={this.redirect}></img>
+                                <img src="images\Folder.png" className="folder" id="home" onClick={this.redirect}></img>
                                 <h6 className="text-light d-flex justify-content-center mr-2"> Home </h6>
                             </div>
                             <div className="zoom">
-                                <img src="images\Folder.png" id="bio" className="folder ml-5"></img>
+                                <img src="images\Folder.png" id="aboutMe" className="folder ml-5" onClick={this.redirect}></img>
                                 <h6 className="text-light d-flex justify-content-center ml-5">About Me</h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
-                                <img src="images\Folder.png"  id="projects" className="folder"></img>
+                                <img src="images\Folder.png" id="projects" className="folder" onClick={this.redirect}></img>
                                 <h6 className="text-light  d-flex justify-content-center"> Projects </h6>
                             </div>
                             <div className="zoom">
-                                <img src="images\Folder.png" id="achievements" className="folder ml-5"></img>
+                                <img src="images\Folder.png" id="achievements" className="folder ml-5" onClick={this.redirect}></img>
                                 <h6 className="text-light d-flex justify-content-center ml-5">Achievements </h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
-                                <img src="images\Folder.png" id="experience" className="folder"></img>
+                                <img src="images\Folder.png" id="experience" className="folder" onClick={this.redirect}></img>
                                 <h6 className="text-light  d-flex justify-content-center"> Experience </h6>
                             </div>
                             <div className="zoom">
-                                <img src="images\Folder.png" id="contactMe" className="folder ml-4"></img>
+                                <img src="images\Folder.png" id="contactMe" className="folder ml-4" onClick={this.redirect}></img>
                                 <h6 className="text-light d-flex justify-content-center ml-4">Contact Me </h6>
                             </div>
                         </div>
