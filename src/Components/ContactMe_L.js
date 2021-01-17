@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, Button, CardBody } from 'reactstrap';
+import { Card, CardHeader, Button, CardBody, CardImg } from 'reactstrap';
 import Desktop_L from './Desktop_L';
 
-class ContactMe extends Component {
+class ContactMe_L extends Component {
     render() {
         return (
-            <div>
-                <div class="envelope" title="">
-                    <div class="back"></div>
-                    <form class="letter">
+            <div className=" col-md-12">
+                <div>
+                    <Card className="static">
+                        <CardImg src="images\Dance.jpg"></CardImg>
+                    </Card>
+                    <form className="active">
                         <p>
                             <label>Name:</label>
                             <input type="text" name="name" />
@@ -29,4 +31,4 @@ class ContactMe extends Component {
     }
 }
 
-export default ContactMe;
+export default ContactMe_L;
