@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardFooter, CardImg, CardImgOverlay, Button } from 'reactstrap';
-import Main from './Main';
+import Main_L from './Main_L';
 import Home_L from './Home_L';
 import AboutMe_L from './AboutMe_L';
+import ContactMe_L from './ContactMe_L';
 
 class Desktop_L extends Component {
 
@@ -31,7 +32,6 @@ class Desktop_L extends Component {
 
     redirect(event) {
         var target = event.target.id;
-        alert(target);
         this.setState({
             redirect: true,
             [target]: true
@@ -51,7 +51,7 @@ class Desktop_L extends Component {
             } else if(this.state.experience){
                 return( <AboutMe_L/> )
             } else if(this.state.contactMe){
-                return( <AboutMe_L/> )
+                return( <ContactMe_L/> )
             } 
         }
         return (

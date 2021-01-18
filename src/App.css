@@ -42,4 +42,8 @@
   transform: scale(1.3);
 } 
 .static { position:absolute;}       
-.static:hover { opacity:0; }
+.static:hover { 
+  opacity:0;
+ }
+.static_form {opacity: 0}
+
