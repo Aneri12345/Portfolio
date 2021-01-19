@@ -4,7 +4,6 @@ import Home_L from './Home_L';
 import Desktop_L from './Desktop_L';
 import AboutMe_L from './AboutMe_L';
 import ContactMe_L from './ContactMe_L';
-
 class Main_L extends Component {
 
     constructor(props){
@@ -31,7 +30,7 @@ class Main_L extends Component {
                                 <img src="images\Camera.jpg" className="rounded-circle mb-2" style={{ height: "28px", width: "28px"}}></img>
                             </CardHeader>
                             <div style={{ overflowY: 'auto', overflowX: 'hidden' }}>
-                                {/* <ContactMe_L/> */}
+                                {/* <Gift/> */}
                                 {this.state.show}
                             </div>
                         </Card>
