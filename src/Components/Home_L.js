@@ -39,7 +39,7 @@ class Home_L extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div style={{ height: "100vh", width: "59vw" }}>
                     <Card className="mt-2 border-bottom-0 border-top-black d-flex justify-content-center">
                         <CardBody>
                             <div className="row d-flex justify-content-center">

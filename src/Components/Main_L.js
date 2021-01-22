@@ -4,6 +4,7 @@ import Home_L from './Home_L';
 import Desktop_L from './Desktop_L';
 import AboutMe_L from './AboutMe_L';
 import ContactMe_L from './ContactMe_L';
+import Projects from './Projects_L';
 class Main_L extends Component {
 
     constructor(props){

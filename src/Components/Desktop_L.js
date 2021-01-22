@@ -4,6 +4,8 @@ import Main_L from './Main_L';
 import Home_L from './Home_L';
 import AboutMe_L from './AboutMe_L';
 import ContactMe_L from './ContactMe_L';
+import Projects from './Projects_L';
+import Achievements_L from './Achievements_L';
 
 class Desktop_L extends Component {
 
@@ -45,9 +47,9 @@ class Desktop_L extends Component {
             } else if(this.state.aboutMe){
                 return( <AboutMe_L/> )
             } else if(this.state.projects){
-                return( <AboutMe_L/> )
+                return( <Projects/> )
             } else if(this.state.achievements){
-                return( <AboutMe_L/> )
+                return( <Achievements_L/> )
             } else if(this.state.experience){
                 return( <AboutMe_L/> )
             } else if(this.state.contactMe){
@@ -55,7 +57,7 @@ class Desktop_L extends Component {
             } 
         }
         return (
-            <div className="border_grey">
+            <div className="border_grey" style={{ height: "100vh", width: "59vw" }}>
                 <Card>
                     <CardImg src="images\wallpaper1.jpg" className="background_l border_grey">
                     </CardImg>
@@ -63,34 +65,34 @@ class Desktop_L extends Component {
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" className="folder" id="home" onClick={this.redirect}></img>
-                                <h6 className="text-light d-flex justify-content-center mr-2"> Home </h6>
+                                <h6 className="text-dark d-flex justify-content-center mr-2"> Home </h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="aboutMe" className="folder ml-5" onClick={this.redirect}></img>
-                                <h6 className="text-light d-flex justify-content-center ml-5">About Me</h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-5">About Me</h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" id="projects" className="folder" onClick={this.redirect}></img>
-                                <h6 className="text-light  d-flex justify-content-center"> Projects </h6>
+                                <h6 className="text-dark  d-flex justify-content-center"> Projects </h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="achievements" className="folder ml-5" onClick={this.redirect}></img>
-                                <h6 className="text-light d-flex justify-content-center ml-5">Achievements </h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-5">Achievements </h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" id="experience" className="folder" onClick={this.redirect}></img>
-                                <h6 className="text-light  d-flex justify-content-center"> Experience </h6>
+                                <h6 className="text-dark  d-flex justify-content-center"> Experience </h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="contactMe" className="folder ml-4" onClick={this.redirect}></img>
-                                <h6 className="text-light d-flex justify-content-center ml-4">Contact Me </h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-4">Contact Me </h6>
                             </div>
                         </div>
-                        <div className="text-light date_time border-none">
+                        <div className="text-dark date_time border-none">
                             <h6 className="d-flex justify-content-end mt-5">{this.state.date}</h6>
                             <h6 className="d-flex justify-content-end ">{this.state.time}</h6>
                         </div>

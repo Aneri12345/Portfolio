@@ -26,7 +26,7 @@ class Routes extends Component {
       }
 
     render() {
-        if(this.state.width < 790 || this.state.height<550){
+        if(this.state.width < 990 || this.state.height<550){
             return (
                 <Switch location={window.location} key={window.location.pathname}>
                     <Route path="/aboutMe" component={AboutMe_L}/>
@@ -37,7 +37,6 @@ class Routes extends Component {
         else if(this.state.width >=770){
             return (
                 <Switch location={window.location} key={window.location.pathname}>
-                    <Route path="/home" component={Home_L} />
                     <Route path="/main" component={Main_L} />
                     <Redirect to="/main" />
                 </Switch>   

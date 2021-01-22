@@ -26,7 +26,7 @@ class AboutMe_L extends Component {
             )
         }
         return (
-            <div className="container col-md-12">
+            <div className="col-md-12">
                 <div>
                     <div className="sticky-top d-flex justify-content-center mt-2 mb-2">
                         <Button className="rounded-circle btn btn-sm zoom" color="white" onClick={this.back}>
@@ -40,6 +40,7 @@ class AboutMe_L extends Component {
                         </div>
                     </div>
                 </div>
+                <div>
                 <p>XM utiliza cookies para asegurarse de que le ofrecemos la mejor experiencia mientras visita nuestro sitio web. Algunas <br />
                     cookies son necesarias para proporcionar características esenciales, tales como sesiones de acceso, y no se pueden<br />
                     deshabilitar. Otras cookies nos ayudan a mejorar el rendimiento de nuestro sitio web y su experiencia personalizando el<br />
@@ -49,16 +50,16 @@ class AboutMe_L extends Component {
                 <div>
                     <p></p>
                 </div>
-                <div>
+                <div style={{ height: "100vh", width: "56vw" }}>
                     <h3 className="d-flex justify-content-center text-dark  ">Education</h3>
                     <Card>
                         <CardHeader><h5>School</h5></CardHeader>
                         <CardBody className="row">
                             <img className="col-md-6 col-12" src="images\din.jpg"></img>
-                            <p className="col-md-6 col-12 my-auto">XM utiliza cookies para asegurarse de que le ofrecemos la mejor experiencia mientras visita nuestro sitio web. Algunas <br />
-                            cookies son necesarias para proporcionar características esenciales, tales como sesiones de acceso, y no se pueden<br />
-                            deshabilitar. Otras cookies nos ayudan a mejorar el rendimiento de nuestro sitio web y su experiencia personalizando el<br />
-                            contenido, ofreciendo funcionalidades de redes sociales y analizando nuestro tráfico. Estas cookies también pueden incluir<br />
+                            <p className="col-md-6 col-12 my-auto">XM utiliza cookies para asegurarse de que le ofrecemos la mejor experiencia mientras visita nuestro sitio web. Algunas 
+                            cookies son necesarias para proporcionar características esenciales, tales como sesiones de acceso, y no se pueden
+                            deshabilitar. Otras cookies nos ayudan a mejorar el rendimiento de nuestro sitio web y su experiencia personalizando el
+                            contenido, ofreciendo funcionalidades de redes sociales y analizando nuestro tráfico. Estas cookies también pueden incluir
                             cookies de terceros, que podrían rastrear su uso de nuestro sitio web. Puede cambiar sus ajustes de cookies en cualquier</p>
                         </CardBody>
                     </Card>
@@ -96,6 +97,7 @@ class AboutMe_L extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
