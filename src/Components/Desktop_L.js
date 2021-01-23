@@ -6,21 +6,15 @@ import AboutMe_L from './AboutMe_L';
 import ContactMe_L from './ContactMe_L';
 import Projects from './Projects_L';
 import Achievements_L from './Achievements_L';
+import Experience_L from './Experience_L';
 
 class Desktop_L extends Component {
 
     constructor(props) {
         super(props);
 
-        var today = new Date(),
-            getDate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-        var today = new Date(),
-            getTime = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-
         this.state = {
             redirect: false,
-            date: getDate,
-            time: getTime,
             home: false,
             aboutMe: false,
             projects: false,
@@ -51,13 +45,14 @@ class Desktop_L extends Component {
             } else if(this.state.achievements){
                 return( <Achievements_L/> )
             } else if(this.state.experience){
-                return( <AboutMe_L/> )
+                return( <Experience_L/> )
             } else if(this.state.contactMe){
                 return( <ContactMe_L/> )
             } 
         }
         return (
-            <div className="border_grey" style={{ height: "100vh", width: "59vw" }}>
+            <div style={{overflowX: "hidden"}}>
+            <div className="border_grey">
                 <Card>
                     <CardImg src="images\wallpaper1.jpg" className="background_l border_grey">
                     </CardImg>
@@ -92,14 +87,10 @@ class Desktop_L extends Component {
                                 <h6 className="text-dark d-flex justify-content-center ml-4">Contact Me </h6>
                             </div>
                         </div>
-                        <div className="text-dark date_time border-none">
-                            <h6 className="d-flex justify-content-end mt-5">{this.state.date}</h6>
-                            <h6 className="d-flex justify-content-end ">{this.state.time}</h6>
-                        </div>
                     </CardImgOverlay>
-
                 </Card>
 
+            </div>
             </div>
         );
     }

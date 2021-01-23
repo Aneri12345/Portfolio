@@ -37,7 +37,9 @@
   margin-top: 13%;
   position: relative;
 }
-
+.textPurp{
+  color: #4b0082;
+}
 .zoom:hover {
   transform: scale(1.3);
 } 
