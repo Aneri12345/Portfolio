@@ -4,6 +4,7 @@ import Home_L from './Home_L';
 import Main_L from "./Main_L";
 import AboutMe from './AboutMe';
 import AboutMe_L from './AboutMe_L';
+import Experience from './Experience';
 import Achievements from './Achievements';
 class Routes extends Component {
 
@@ -42,6 +43,7 @@ class Routes extends Component {
                     <Route path="/main" component={Main_L} />
                     <Route path="/aboutMePopout" component={AboutMe}/> 
                     <Route path="/achievements" component={Achievements} />
+                    <Route path="/experience" component={Experience} />
                     <Redirect to="/main" />
                 </Switch>   
             );
