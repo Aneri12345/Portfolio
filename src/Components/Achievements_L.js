@@ -33,14 +33,15 @@ class Achievements_L extends Component {
       items: [],
       activeIndex: 0,
       animating: false,
-      back: false
+      back: false,
+      popout: false,
     }
 
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
     this.back = this.back.bind(this);
-    this.handlePopout = this.handlePopout.bind(this);
+    this.popout = this.popout.bind(this);
     // this.slides = this.slides.bind(this);
   }
 
@@ -72,17 +73,21 @@ class Achievements_L extends Component {
     })
   }
 
-  handlePopout(){
-    return (
-      <Redirect to="Desktop_L"/>
-    )
-  }
-
+  popout(){
+    this.setState({
+        popout: true,
+    })
+}
 
 
 
   render() {
-    if (this.state.back) {
+    if(this.state.popout){
+      return(
+          <Redirect to="/achievements"/>
+      )
+  }
+  else if (this.state.back) {
       return (
         <Desktop_L />
       )
@@ -110,7 +115,7 @@ class Achievements_L extends Component {
             </Button>
             <div className="mx-auto"><h3><strong>Achievements   </strong></h3></div>
             <div>
-              <Button className="rounded-circle btn btn-sm mr-2 mt-1 zoom" color="white" onClick={this.handlePopout}>
+              <Button className="rounded-circle btn btn-sm mr-2 mt-1 zoom" color="white" onClick={this.popout}>
                 <img src="images\Popout.png" style={{ height: "25px", width: "25px" }}></img>
               </Button>
             </div>

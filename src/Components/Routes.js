@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import {Switch, Route, Redirect, useLocation} from 'react-router-dom';
 import Home_L from './Home_L';
 import Main_L from "./Main_L";
+import AboutMe from './AboutMe';
 import AboutMe_L from './AboutMe_L';
-
+import Achievements from './Achievements';
 class Routes extends Component {
 
     constructor(props) {
@@ -29,7 +30,8 @@ class Routes extends Component {
         if(this.state.width < 990 || this.state.height<550){
             return (
                 <Switch location={window.location} key={window.location.pathname}>
-                    <Route path="/aboutMe" component={AboutMe_L}/>
+                    <Route path="/aboutMe" component={AboutMe}/>
+                    <Route path="/achievements" component={Achievements} />
                     <Redirect to="/aboutMe" />
                 </Switch>   
             );
@@ -38,6 +40,8 @@ class Routes extends Component {
             return (
                 <Switch location={window.location} key={window.location.pathname}>
                     <Route path="/main" component={Main_L} />
+                    <Route path="/aboutMePopout" component={AboutMe}/> 
+                    <Route path="/achievements" component={Achievements} />
                     <Redirect to="/main" />
                 </Switch>   
             );
