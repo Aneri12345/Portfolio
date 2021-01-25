@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/aneri12345.github.io/static/css/main.6edfcbaa.chunk.css",
+    "main.js": "/aneri12345.github.io/static/js/main.7c2dbad8.chunk.js",
+    "main.js.map": "/aneri12345.github.io/static/js/main.7c2dbad8.chunk.js.map",
+    "runtime-main.js": "/aneri12345.github.io/static/js/runtime-main.787ecddf.js",
+    "runtime-main.js.map": "/aneri12345.github.io/static/js/runtime-main.787ecddf.js.map",
+    "static/css/2.9cc476af.chunk.css": "/aneri12345.github.io/static/css/2.9cc476af.chunk.css",
+    "static/js/2.af34b93e.chunk.js": "/aneri12345.github.io/static/js/2.af34b93e.chunk.js",
+    "static/js/2.af34b93e.chunk.js.map": "/aneri12345.github.io/static/js/2.af34b93e.chunk.js.map",
+    "static/js/3.9bfbf5cc.chunk.js": "/aneri12345.github.io/static/js/3.9bfbf5cc.chunk.js",
+    "static/js/3.9bfbf5cc.chunk.js.map": "/aneri12345.github.io/static/js/3.9bfbf5cc.chunk.js.map",
+    "index.html": "/aneri12345.github.io/index.html",
+    "static/css/2.9cc476af.chunk.css.map": "/aneri12345.github.io/static/css/2.9cc476af.chunk.css.map",
+    "static/css/main.6edfcbaa.chunk.css.map": "/aneri12345.github.io/static/css/main.6edfcbaa.chunk.css.map",
+    "static/js/2.af34b93e.chunk.js.LICENSE.txt": "/aneri12345.github.io/static/js/2.af34b93e.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/aneri12345.github.io/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/logo.6ce24c58.svg": "/aneri12345.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.787ecddf.js",
+    "static/css/2.9cc476af.chunk.css",
+    "static/js/2.af34b93e.chunk.js",
+    "static/css/main.6edfcbaa.chunk.css",
+    "static/js/main.7c2dbad8.chunk.js"
+  ]
+}
