@@ -5,7 +5,7 @@ import Desktop_L from './Desktop_L';
 
 const items = [
   {
-    src: 'https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w900X450/Take_in_the_Scenery.jpg',
+    src: 'images\googleCloud.jpg',
     alt: 'Interview of Prof. Chandra',
     captionT: 'hahahaha',
     captionH: 'haeyyy'

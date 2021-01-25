@@ -25,7 +25,7 @@ class Projects extends Component {
             )
         }
         return (
-            <div>
+            <div style={{ height: "60vh", width: "59vw", }}>
                 <div>
                     <div className="sticky-top d-flex justify-content-center mt-2">
                         <Button className="rounded-circle btn btn-sm zoom" color="white" onClick={this.back}>
@@ -43,8 +43,8 @@ class Projects extends Component {
                 <Card className="bg_dp" style={{ borderRadius: "0px" }}>
                     <CardHeader className="text-light d-flex justify-content-center" style={{ backgroundColor: "#32174d" }}><h3>1. Resource Management System</h3></CardHeader>
                     <div className="row">
-                        <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                        <div className="col col-md-5 col-12 mr-5">
+                            <img src="images\Background_L.jpg" style={{ height: "35vh", width: "25vw" }} className="m-3 mt-4 mt-5 img_shadow_lp"></img>
                         </div>
                         <div className="col col-md-6 col-12 my-auto">
                             <h3 className="text-light"><strong>Theme</strong></h3>
@@ -67,7 +67,7 @@ class Projects extends Component {
                             cookies de terceros, que podrían rastrear su uso de nuestro sitio web. Puede cambiar sus ajustes de cookies en cualquier</p>
                         </div>
                         <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                            <img src="images\Background_L.jpg" style={{ height: "35vh", width: "25vw" }} className="m-3 mt-4 img_shadow_lp"></img>
                         </div>
                     </div>
                 </Card>
@@ -76,7 +76,7 @@ class Projects extends Component {
                     <CardHeader className="text-light d-flex justify-content-center" style={{ backgroundColor: "#32174d" }}><h3>2. Resource Management System</h3></CardHeader>
                     <div className="row">
                         <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                            <img src="images\Background_L.jpg" style={{height: "35vh", width: "25vw"}} className="m-3 mt-4 img_shadow_lp"></img>
                         </div>
                         <div className="col col-md-6 col-12 my-auto">
                             <h3 className="text-dark"><strong>Theme</strong></h3>
@@ -99,7 +99,7 @@ class Projects extends Component {
                             cookies de terceros, que podrían rastrear su uso de nuestro sitio web. Puede cambiar sus ajustes de cookies en cualquier</p>
                         </div>
                         <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                            <img src="images\Background_L.jpg" style={{height: "35vh", width: "25vw"}} className="m-3 mt-4 img_shadow_lp"></img>
                         </div>
                     </div>
                 </Card>
@@ -108,7 +108,7 @@ class Projects extends Component {
                 <CardHeader className="text-light d-flex justify-content-center" style={{ backgroundColor: "#32174d" }}><h3>3. Resource Management System</h3></CardHeader>
                         <div className="row">
                         <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                            <img src="images\Background_L.jpg" style={{height: "35vh", width: "25vw"}} className="m-3 mt-4 img_shadow_lp"></img>
                         </div>
                         <div className="col col-md-6 col-12 my-auto">
                             <h3 className="text-light"><strong>Theme</strong></h3>
@@ -131,7 +131,7 @@ class Projects extends Component {
                             cookies de terceros, que podrían rastrear su uso de nuestro sitio web. Puede cambiar sus ajustes de cookies en cualquier</p>
                         </div>
                         <div className="col col-md-6 col-12">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "30vw" }} className="m-3 img_shadow_lp"></img>
+                            <img src="images\Background_L.jpg" style={{height: "35vh", width: "25vw"}} className="m-3 mt-4 img_shadow_lp"></img>
                         </div>
                     </div>
                 </Card>
