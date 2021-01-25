@@ -5,17 +5,17 @@ import Header from './Header';
 
 const items = [{
     title: <h5>May 2020</h5>,
-    cardTitle: <h2 className="textPurp" >Company 1</h2>,
+    cardTitle: <h4 className="textPurp" >Company 1</h4>,
     cardSubtitle: <img src="images\Background_L.jpg" className="ml-3" style={{ width: "90%", height: "40%" }}></img>,
     cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit",
 }, {
     title: "May 1940",
-    cardTitle: <h2 className="textPurp" >Company 2</h2>,
+    cardTitle: <h4 className="textPurp" >Company 2</h4>,
     cardSubtitle: <img src="images\Background_L.jpg" className="ml-3" style={{ width: "90%", height: "40%" }}></img>,
     cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit",
 }, {
     title: "May 1940",
-    cardTitle: <h2 className="textPurp" >Company 3</h2>,
+    cardTitle: <h4 className="textPurp" >Company 3</h4>,
     cardSubtitle: <img src="images\Background_L.jpg" className="ml-3" style={{ width: "90%", height: "40%" }}></img>,
     cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.Men of the British Expeditionary Force (BEF) wade out todajhbdjwhd.(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit(BEF) wade out todajhbdjwhd.Men of the British Expedit",
 },];

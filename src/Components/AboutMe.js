@@ -8,17 +8,94 @@ class AboutMe_L extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            back: false,
-            popout: false,
-        }
+        this.state = { width: 0, height: 0, back: false, popout: false };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
 
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
     render() {
+        let temp;
+        if (this.state.width >= 990) {
+            temp = <CardBody className="row bg_dp" style={{ borderColor: "#8601af" }}>
+                <div className="row m-3 mx-auto">
+                    <div className="col mx-auto">
+                        <img class="static img_shadow_lp ml-5" src="images\tennis.jpg" style={{ height: "75%", width: "60%" }} />
+                        <img class="active img_shadow_lp ml-5" src="images\tennis.gif" style={{ height: "70%", width: "60%" }} />
+                    </div>
+                    <div className="col">
+                        <img class="static img_shadow_lp" src="images\painting.jpg" style={{ height: "80%", width: "70%" }} />
+                        <img class="active img_shadow_lp" src="images\painting.gif" style={{ height: "80%", width: "70%" }} />
+                    </div>
+                    <div className="col">
+                        <img class="static img_shadow_lp" src="images\photography.jpg" style={{ height: "80%", width: "73%" }} />
+                        <img class="active img_shadow_lp" src="images\photography.gif" style={{ height: "80%", width: "78%" }} />
+                    </div>
+                </div>
+                <div className="row m-3 mx-auto">
+                    <div className="col">
+                        <img class="static img_shadow_lp ml-4" src="images\Dance.jpg" style={{ height: "85%", width: "65%" }} />
+                        <img class="active" src="images\Dance.gif" style={{ height: "85%", width: "75%" }} />
+                    </div>
+                    <div className="col">
+                        <img class="static img_shadow_lp" src="images\travel.jpg" style={{ height: "90%", width: "72%" }} />
+                        <img class="active img_shadow_lp" src="images\travel.gif" style={{ height: "90%", width: "75%" }} />
+                    </div>
+                    <div className="col">
+                        <img class="static img_shadow_lp" src="images\coding.jpg" style={{ height: "80%", width: "74%" }} />
+                        <img class="active img_shadow_lp" src="images\coding.gif" style={{ height: "80%", width: "78%" }} />
+                    </div>
+                </div>
+            </CardBody>
+        } else {
+            temp = <CardBody className="row bg_dp" style={{ borderColor: "#8601af" }}>
+                <div className="row m-3 mx-auto">
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp" src="images\tennis.jpg" style={{ height: "75%", width: "60%" }} />
+                        <img class="active img_shadow_lp" src="images\tennis.gif" style={{ height: "70%", width: "60%" }} />
+                    </div>
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp" src="images\painting.jpg" style={{ height: "80%", width: "70%" }} />
+                        <img class="active img_shadow_lp" src="images\painting.gif" style={{ height: "80%", width: "70%" }} />
+                    </div>
+                </div>
+                <div className="row m-3 mx-auto">
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp" src="images\photography.jpg" style={{ height: "80%", width: "73%" }} />
+                        <img class="active img_shadow_lp" src="images\photography.gif" style={{ height: "80%", width: "78%" }} />
+                    </div>
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp ml-4" src="images\Dance.jpg" style={{ height: "85%", width: "65%" }} />
+                        <img class="active" src="images\Dance.gif" style={{ height: "85%", width: "75%" }} />
+                    </div>
+                </div>
+                <div className="row m-3 mx-auto">
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp" src="images\travel.jpg" style={{ height: "90%", width: "72%" }} />
+                        <img class="active img_shadow_lp" src="images\travel.gif" style={{ height: "90%", width: "75%" }} />
+                    </div>
+                    <div className="col-12 d-flex justify-content-center">
+                        <img class="static img_shadow_lp" src="images\coding.jpg" style={{ height: "80%", width: "74%" }} />
+                        <img class="active img_shadow_lp" src="images\coding.gif" style={{ height: "80%", width: "78%" }} />
+                    </div>
+                </div>
+
+            </CardBody>
+        }
         return (
-            <div style={{ height: "100%", width: "100%", overflowX:"hidden", overflowY:"auto"}} >
-                <Header/>
+            <div style={{ height: "100%", width: "100%", overflowX: "hidden", overflowY: "auto" }} >
+                <Header />
                 <div className="bg_header">
                     <div style={{ height: "150vh", width: "100%" }} className="bg_dp">
                         <Card style={{ borderColor: "#8601af" }} className=" d-flex justify-content-center">
@@ -45,41 +122,24 @@ class AboutMe_L extends Component {
                                 </h6>
                             </CardBody>
                         </Card>
+                        <Card style={{ borderColor: "#8601af" }} className=" d-flex justify-content-center">
+                            <CardHeader style={{ backgroundColor: "#32174d" }}>
+                                <h3 className="d-flex justify-content-center text-light">Skills</h3>
+                            </CardHeader>
+                            <CardBody className="row bg_dp" style={{ borderColor: "#8601af" }}>
+                                <div className="text-light">
+                                    <li>Node.js</li>
+                                    <li>React.js</li>
+                                    <li>Java</li>
+                                    <li>C, Cpp</li>
+                                </div>
+                            </CardBody>
+                        </Card>
                         <Card style={{ borderColor: "#8601af" }}>
                             <CardHeader style={{ backgroundColor: "#32174d" }}>
                                 <h3 className="d-flex justify-content-center text-light">Hobbies</h3>
                             </CardHeader>
-                            <CardBody className="row bg_dp" style={{ borderColor: "#8601af" }}>
-                                <div className="row m-3 mx-auto">
-                                <div className="col mx-auto">
-                                    <img class="static img_shadow_lp ml-5" src="images\tennis.jpg" style={{ height: "75%", width: "60%" }} />
-                                    <img class="active img_shadow_lp ml-5" src="images\tennis.gif" style={{ height: "70%", width: "60%" }} />
-                                </div>
-                                <div className="col">
-                                    <img class="static img_shadow_lp" src="images\painting.jpg" style={{ height: "80%", width: "70%" }} />
-                                    <img class="active img_shadow_lp" src="images\painting.gif" style={{ height: "80%", width: "70%" }} />
-                                </div>
-                                <div className="col">
-                                    <img class="static img_shadow_lp" src="images\photography.jpg" style={{ height: "80%", width: "73%" }} />
-                                    <img class="active img_shadow_lp" src="images\photography.gif" style={{ height: "80%", width: "78%" }} />
-                                </div>
-                                </div>
-                                <div className="row m-3 mx-auto">
-                                <div className="col">
-                                    <img class="static img_shadow_lp ml-4" src="images\Dance.jpg" style={{ height: "85%", width: "65%" }} />
-                                    <img class="active" src="images\Dance.gif" style={{ height: "85%", width: "75%" }} />
-                                </div>
-                                <div className="col">
-                                    <img class="static img_shadow_lp" src="images\travel.jpg" style={{ height: "90%", width: "72%" }} />
-                                    <img class="active img_shadow_lp" src="images\travel.gif" style={{ height: "90%", width: "75%" }} />
-                                </div>
-                                <div className="col">
-                                    <img class="static img_shadow_lp" src="images\coding.jpg" style={{ height: "80%", width: "74%" }} />
-                                    <img class="active img_shadow_lp" src="images\coding.gif" style={{ height: "80%", width: "78%" }} />
-                                </div>
-                                </div>
-                                
-                            </CardBody>
+                            {temp}
                         </Card>
                     </div>
 
