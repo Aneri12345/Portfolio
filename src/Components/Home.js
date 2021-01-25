@@ -29,7 +29,7 @@ class Home extends Component {
                             <div className="row d-flex justify-content-center">
                                 <img src="images/Aneri.jpg" className="col-md-6 col-8"></img>
                                 <div className="my-auto d-flex justify-content-center">
-                                    <h2 className="text-light ml-5">Hello!, I am <span className="text-info"><a href="https://www.linkedin.com/in/aneri-dalwadi/" className="text-decoration-none">Aneri Dalwadi</a></span></h2>
+                                    <h2 className="text-light mt-5 ml-5">Hello!, I am <span className="text-info"><a href="https://www.linkedin.com/in/aneri-dalwadi/" className="text-decoration-none">Aneri Dalwadi</a></span></h2>
                                 </div> 
                                 <div className="mt-3 text-light col-md-10" >   
                                     <p>XM utiliza cookies para asegurarse de que le ofrecemos la mejor experiencia mientras visita nuestro sitio web. Algunas

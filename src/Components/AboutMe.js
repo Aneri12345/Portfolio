@@ -17,7 +17,7 @@ class AboutMe_L extends Component {
 
     render() {
         return (
-            <div style={{ height: "100%", width: "100%", overflowX:"hidden" }} >
+            <div style={{ height: "100%", width: "100%", overflowX:"hidden", overflowY:"auto"}} >
                 <Header/>
                 <div className="bg_header">
                     <div style={{ height: "150vh", width: "100%" }} className="bg_dp">
@@ -26,35 +26,24 @@ class AboutMe_L extends Component {
                                 <h3 className="d-flex justify-content-center text-light">Education</h3>
                             </CardHeader>
                             <CardBody className="row bg_dp  d-flex justify-content-center">
-                                <h4 className="col col-md-12 col-12 d-flex justify-content-center mb-3"><strong className="bg_lp text-light border-rounded"><div className="m-2 text-dark">School</div></strong></h4>
+                                <h4 className="col col-12 d-flex justify-content-center mb-3"><strong className="bg_lp text-light border-rounded"><div className="m-2 text-dark">School</div></strong></h4>
                                 <div className=" col-md-4">
                                     <CardImg src="images\din.jpg" className="img_shadow_lp img-fluid mr-5"></CardImg>
                                 </div>
-                                <h6 className="col-md-5 col-12 mt-5 ml-5 text-light">
+                                <h6 className="col-12 mt-5 d-flex justify-content-center text-light">
                                     I had my school incuding 11th and 12th in St. Kabir DIN. I have gaind lots of learnings from there include both academis and corriculor section.<br />
                                     I had been active participant in all the activities be it sports, dance, craft or quiz, I also maintained my top position in the exams.
                                     All this efforts and passion led me towards winning "The Student Of the Year" trophy.
                                 </h6>
-                                <h4 className="col col-md-12 col-12 d-flex justify-content-center mb-3"><strong className="bg_lp text-light border-rounded">
-                                    <div className="m-2 text-dark">
-                                        College
-                                    </div>
-                                </strong>
-                                </h4>
-                                <div className="col-md-5 col-12" >
-                                    <CardImg src="images\seas.jpg" className="img_shadow_lp mb-3" style={{ height: "100%", width: "90%" }}></CardImg>
+                                <h4 className="col col-12 d-flex justify-content-center mb-3"><strong className="bg_lp text-light border-rounded"><div className="m-2 text-dark">College</div></strong></h4>
+                                <div className=" col-md-4">
+                                    <CardImg src="images\seas.jpg" className="img_shadow_lp img-fluid mr-5"></CardImg>
                                 </div>
-                                <h6 className="col-md-5 col-12 my-auto text-light">
-                                    I am pertaining my graduation at Ahmedabad University (School: School of Engineering And Science (SEAS)).<br />
+                                <h6 className="col-12 mt-5 d-flex justify-content-center text-light">
+                                    I am persuing my graduation at Ahmedabad University (School: School of Engineering And Science (SEAS)).<br />
                                     I undertaken my graduation in BTech Computer Scienc and Engineering.
                                 </h6>
                             </CardBody>
-                            <CardBody className="row bg_dp  d-flex justify-content-center">
-                               
-                            </CardBody>
-                        </Card>
-                        <Card style={{ borderColor: "#8601af" }}>
-                            
                         </Card>
                         <Card style={{ borderColor: "#8601af" }}>
                             <CardHeader style={{ backgroundColor: "#32174d" }}>

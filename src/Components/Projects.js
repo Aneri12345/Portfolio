@@ -32,10 +32,10 @@ class Projects extends Component {
                 <Card className="bg_dp" style={{ borderRadius: "0px" }}>
                     <CardHeader className="text-light d-flex justify-content-center" style={{ backgroundColor: "#32174d" }}><h3>Resource Management System</h3></CardHeader>
                     <div className="row">
-                        <div className="col col-md-5 col-12 mr-5">
-                            <img src="images\Background_L.jpg" style={{ height: "40vh", width: "35vw" }} className="m-3 mt-4 mt-5 img_shadow_lp"></img>
+                        <div className="d-flex justify-content-center">
+                            <img src="images\Background_L.jpg" className="img-fluid m-3 mt-4 mt-5 img_shadow_lp"></img>
                         </div>
-                        <div className="col col-md-6 col-12 my-auto">
+                        <div>
                             <h3 className="text-light"><strong>Theme</strong></h3>
                             <p className="text-light">
                                 We all have struggled on where to find good resources. Resource Management System comes to the rescue. It is an applcation

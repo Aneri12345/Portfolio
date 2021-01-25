@@ -28,7 +28,7 @@
   height: 5vh;
   width: 3vw;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px black;
+  box-shadow: 0px 0px 6px black;
 }
 .shadow-text{
   box-shadow: 5px black;

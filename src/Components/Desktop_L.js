@@ -54,37 +54,37 @@ class Desktop_L extends Component {
             <div style={{overflowX: "hidden"}}>
             <div className="border_grey">
                 <Card>
-                    <CardImg src="images\wallpaper1.jpg" className="background_l border_grey">
+                    <CardImg src="images\aneri_wp1.png" className="background_l border_grey">
                     </CardImg>
                     <CardImgOverlay>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" className="folder" id="home" onClick={this.redirect}></img>
-                                <h6 className="text-dark d-flex justify-content-center mr-2"> Home </h6>
+                                <h6 className="text-dark d-flex justify-content-center mr-2"><strong> Home</strong> </h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="aboutMe" className="folder ml-5" onClick={this.redirect}></img>
-                                <h6 className="text-dark d-flex justify-content-center ml-5">About Me</h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-5"><strong>About Me</strong></h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" id="projects" className="folder" onClick={this.redirect}></img>
-                                <h6 className="text-dark  d-flex justify-content-center"> Projects </h6>
+                                <h6 className="text-dark  d-flex justify-content-center"><strong> Projects </strong></h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="achievements" className="folder ml-5" onClick={this.redirect}></img>
-                                <h6 className="text-dark d-flex justify-content-center ml-5">Achievements </h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-5"><strong>Achievements</strong> </h6>
                             </div>
                         </div>
                         <div className="row mt-3 ml-3">
                             <div className="zoom">
                                 <img src="images\Folder.png" id="experience" className="folder" onClick={this.redirect}></img>
-                                <h6 className="text-dark  d-flex justify-content-center"> Experience </h6>
+                                <h6 className="text-dark  d-flex justify-content-center"><strong> Experience</strong> </h6>
                             </div>
                             <div className="zoom">
                                 <img src="images\Folder.png" id="contactMe" className="folder ml-4" onClick={this.redirect}></img>
-                                <h6 className="text-dark d-flex justify-content-center ml-4">Contact Me </h6>
+                                <h6 className="text-dark d-flex justify-content-center ml-4"><strong>Contact Me </strong></h6>
                             </div>
                         </div>
                     </CardImgOverlay>

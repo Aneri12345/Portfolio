@@ -31,9 +31,23 @@ class Routes extends Component {
       }
 
     render() {
-        if(this.state.width < 990 || this.state.height<550){
+        
+        if(this.state.width >=990){
             return (
-                <Switch location={window.location} key={window.location.pathname}>
+                <Switch>
+                    <Route path="/main" component={Main_L} />
+                    <Route path="/aboutMe" component={AboutMe}/> 
+                    <Route path="/projects" component={Projects}/>
+                    <Route path="/achievements" component={Achievements} />
+                    <Route path="/experience" component={Experience} />
+                    <Route path="/contactMe" component={ContactMe}/>
+                    <Route path="/homePortal" component={Home} />
+                    <Redirect to="/main" />
+                </Switch>   
+            );
+        } else if(this.state.width < 990 || this.state.height<550){
+            return (
+                <Switch>
                     <Route path="/home" component={Home} />
                     <Route path="/aboutMe" component={AboutMe}/> 
                     <Route path="/projects" component={Projects}/>
@@ -41,20 +55,6 @@ class Routes extends Component {
                     <Route path="/experience" component={Experience} />
                     <Route path="/contactMe" component={ContactMe}/>
                     <Redirect to="/home" />
-                </Switch>   
-            );
-        }
-        else if(this.state.width >=770){
-            return (
-                <Switch location={window.location} key={window.location.pathname}>
-                    <Route path="/main" component={Main_L} />
-                    <Route path="/aboutMe" component={AboutMe}/> 
-                    <Route path="/projects" component={Projects}/>
-                    <Route path="/achievements" component={Achievements} />
-                    <Route path="/experience" component={Experience} />
-                    <Route path="/contactMe" component={ContactMe}/>
-                    <Route path ="/home" component={Home} />
-                    <Redirect to="/main" />
                 </Switch>   
             );
         }

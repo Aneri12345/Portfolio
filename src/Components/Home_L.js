@@ -7,11 +7,9 @@ class Home_L extends Component {
         super(props);
         this.state = {
             back: false,
-            popout: false,
         }
 
         this.back = this.back.bind(this);
-        this.popout = this.popout.bind(this);
     }
 
     back() {
@@ -20,20 +18,9 @@ class Home_L extends Component {
         })
     }
 
-    popout() {
-        this.setState({
-            popout: true,
-        })
-    }
 
     render() {
-        if (this.state.popout) {
-            return (
-                <div>
-                    {window.open("/home", '_blank')}
-                </div>
-            )
-        } else if(this.state.back){
+        if(this.state.back){
             return(
                 <Desktop_L/>
             )
@@ -46,11 +33,6 @@ class Home_L extends Component {
                             <img src="images\Back.png" style={{ height: "25px", width: "25px" }}></img>
                         </Button>
                         <div className="mx-auto"><h3><strong>Home</strong></h3></div>
-                        <div>
-                            <Button className="rounded-circle btn btn-sm mr-2 mt-1 zoom" color="white" onClick={this.popout}>
-                                <img src="images\Popout.png" style={{ height: "25px", width: "25px" }}></img>
-                            </Button>
-                        </div>
                     </div>
                 </div>
                 <div style={{ height: "60vh", width: "59vw", }}>
