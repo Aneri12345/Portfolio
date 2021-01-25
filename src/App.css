@@ -42,11 +42,12 @@
 }
 .zoom:hover {
   transform: scale(1.3);
+  transition: 0.3s 
 } 
 .static { position:absolute;}       
-.static:hover { opacity:0; }
+.static:hover { opacity:0; transition: 0.7s }
 .static_form {opacity: 0}
-.static_form:hover { opacity:100; }
+.static_form:hover { opacity:100;transition: 0.7s  }
 
 .bg_header{
   background-color: #e6e8fa;

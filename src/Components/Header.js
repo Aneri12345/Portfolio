@@ -34,35 +34,35 @@ class Header extends Component {
                 <div className="container">
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar className="dark">
-                        <Nav navbar className="ml-auto">
-                            <NavItem className="mt-1">
+                        <Nav navbar className="mx-auto">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/home'>
-                                    <span className="fa fa-home fa-lg mr-2"></span>Home
+                                    Home
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="mt-1">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/aboutMe'>
-                                    <span className="fa fa-plus fa-lg mr-2 mt-1"></span>About Me
+                                    About Me
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="mt-1">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/projects'>
-                                    <span className="fa fa-info fa-lg mr-2"></span>Projects
+                                    Projects
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="mt-1">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/achievements'>
-                                    <span className="fa fa-info fa-lg mr-2"></span>Achievements
+                                    Achievements
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="mt-1">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/experience'>
-                                    <span className="fa fa-info fa-lg mr-2"></span>Experience
+                                    Experience
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="mt-1">
+                            <NavItem className="mt-1 mr-4">
                                 <NavLink className="nav-link" to='/contactMe'>
-                                    <span className="fa fa-phone fa-lg mr-2"></span>Contact Me
+                                   Contact Me
                                 </NavLink>
                             </NavItem>
                         </Nav>

@@ -7,7 +7,8 @@ import AboutMe_L from './AboutMe_L';
 import Experience from './Experience';
 import Achievements from './Achievements';
 import Home from './Home';
-import Projects from './Projects_L';
+import ContactMe from './ContactMe';
+import Projects from './Projects';
 class Routes extends Component {
 
     constructor(props) {
@@ -33,7 +34,13 @@ class Routes extends Component {
         if(this.state.width < 990 || this.state.height<550){
             return (
                 <Switch location={window.location} key={window.location.pathname}>
+                    <Route path="/home" component={Home} />
+                    <Route path="/aboutMe" component={AboutMe}/> 
+                    <Route path="/projects" component={Projects}/>
                     <Route path="/achievements" component={Achievements} />
+                    <Route path="/experience" component={Experience} />
+                    <Route path="/contactMe" component={ContactMe}/>
+                    <Redirect to="/home" />
                 </Switch>   
             );
         }
@@ -45,6 +52,7 @@ class Routes extends Component {
                     <Route path="/projects" component={Projects}/>
                     <Route path="/achievements" component={Achievements} />
                     <Route path="/experience" component={Experience} />
+                    <Route path="/contactMe" component={ContactMe}/>
                     <Route path ="/home" component={Home} />
                     <Redirect to="/main" />
                 </Switch>   

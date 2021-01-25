@@ -37,7 +37,9 @@ class AboutMe_L extends Component {
     render() {
         if (this.state.popout) {
             return (
-                <Redirect to="/aboutMe" />
+                <div>
+                    {window.open("/aboutMe", '_blank')}
+                </div>
             )
         }
         else if (this.state.back) {
@@ -46,7 +48,7 @@ class AboutMe_L extends Component {
             )
         }
         return (
-            <div style={{ height: "100%", width: "58vw" }}>
+            <div style={{ height: "100%", width: "57vw" }}>
                 <div>
                     <div className="sticky-top d-flex justify-content-center mt-2 mb-2">
                         <Button className="rounded-circle btn btn-sm zoom" color="white" onClick={this.back}>

@@ -55,7 +55,9 @@ class Experience_L extends Component {
         }
         else if (this.state.back) {
             return (
-                <Desktop_L />
+                <div>
+                    {window.open("/experience", '_blank')}
+                </div>
             )
         }
         return(
@@ -74,7 +76,8 @@ class Experience_L extends Component {
                     </div>
                 </div>
                 <div className="">
-                    <div className="bg_header" style={{ height: "150vh", width: "58vw" }}>
+                    <div className="bg_header" style={{ height: "150vh", width: "57vw" }}>
+                        <div className="d-flex justify-content-center">Click(<span className="fa fa-arrow-up mt-1 ml-1"></span><span className="fa fa-arrow-down mt-1 ml-2 mr-1"></span>)</div>
                         <div>
                             <Chrono items={items} 
                             theme={{ primary: "#4b0082", secondary: "white", cardBgColor: "#d19fe8", cardForeColor: "black" }} 

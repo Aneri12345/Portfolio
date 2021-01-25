@@ -29,7 +29,9 @@ class Home_L extends Component {
     render() {
         if (this.state.popout) {
             return (
-                <Redirect to="/home" />
+                <div>
+                    {window.open("/home", '_blank')}
+                </div>
             )
         } else if(this.state.back){
             return(

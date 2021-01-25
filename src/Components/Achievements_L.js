@@ -5,22 +5,16 @@ import Desktop_L from './Desktop_L';
 
 const items = [
   {
-    src: 'images\googleCloud.jpg',
+    src: 'https://res.cloudinary.com/didf23s1x/image/upload/v1611548897/Misc/Google_Cloud_Certificate_vjmrns.png',
     alt: 'Interview of Prof. Chandra',
     captionT: 'hahahaha',
     captionH: 'haeyyy'
   },
   {
-    src: 'https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w900X450/Take_in_the_Scenery.jpg',
+    src: 'https://res.cloudinary.com/didf23s1x/image/upload/v1611549316/Misc/Hacktoberfest_Certificate_s3hhjk.png',
     alt: 'Slide 2',
     captionT: 'Slide 2',
     captionH: 'slide 2'
-  },
-  {
-    src: 'https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w900X450/Take_in_the_Scenery.jpg',
-    alt: 'Slide 3',
-    captionT: 'Slide 3',
-    captionH: 'Slide 3'
   },
 ]
 
@@ -83,9 +77,11 @@ class Achievements_L extends Component {
 
   render() {
     if(this.state.popout){
-      return(
-          <Redirect to="/achievements"/>
-      )
+      return (
+        <div>
+            {window.open("/achievements", '_blank')}
+        </div>
+    )
   }
   else if (this.state.back) {
       return (
@@ -98,7 +94,7 @@ class Achievements_L extends Component {
           onExited={() => this.setState({ animating: false })}
           key={item.src}>
           <div className="container d-flex justify-content-center" id="card1">
-            <img style={{ width: "80%", maxHeight: "95%" }} className="img-fluid" id="img1" src={item.src} alt={item.alt_text} />
+            <img style={{ maxWidth: "55%", maxHeight: "95%" }} className="img-fluid" id="img1" src={item.src} alt={item.alt_text} />
           </div>
           <div className="container d-flex justify-content-center" id="cardText">
             <CarouselCaption captionText={item.captionT}  id="cardText" className="text-dark" captionHeader={item.captionH} />
@@ -128,6 +124,23 @@ class Achievements_L extends Component {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
           </Carousel>
+          <div className="mt-4">
+            <h4 className="d-flex justify-content-center">Google Cloud Program</h4>
+            <p className="d-flex justify-content-center ml-4">
+              Google Cloud Platform was a training program where we understood the core cloud as well as Machine Learning concepts.
+              Practical implementation helped a lot to make the concepts clear. This way at least at basic level, I had a
+              knowledge about the topic especially cloud. I would like to thank the Google Student Developer Club of
+              Ahmedabad University for this providing this amazing opportunity.
+            </p>
+            <h4 className="d-flex justify-content-center">Hacktoberfest 2020</h4>
+            <p className="d-flex justify-content-center ml-4">
+              Hacktoberfest is a month-long celebration of open source software run by DigitalOcean in partnership with GitHub and Twilio.
+              In this fest, we have to contribute to an open source project which must have a label of hacktoberfest-2020. So, when we 
+              create a Pull Request, we have to then wait for the moderator to add our changes to the main project. This was great experience
+              and I thansk Ahmedabad University Programming Club for giving this opportunity that helped in boost the learning process and 
+              also introduce to the world of Open Source Projects.
+            </p>
+          </div>
         </div>
       </div>
     );
