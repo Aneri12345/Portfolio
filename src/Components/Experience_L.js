@@ -50,14 +50,14 @@ class Experience_L extends Component {
 
         if(this.state.popout){
             return(
-                <Redirect to="/experience"/>
+                <div>
+                    {window.open("/experience", '_blank')}
+                </div>
             )
         }
         else if (this.state.back) {
             return (
-                <div>
-                    {window.open("/experience", '_blank')}
-                </div>
+                <Desktop_L />
             )
         }
         return(

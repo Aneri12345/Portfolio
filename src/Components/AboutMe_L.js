@@ -80,6 +80,7 @@ class AboutMe_L extends Component {
                                 </h6>
                             </CardBody>
                         </Card>
+                        
                         <Card style={{ borderColor: "#8601af" }}>
                             <CardBody className="row bg_dp">
                                 <h4 className="col col-md-12 col-12 d-flex justify-content-center mb-3"><strong className="bg_lp text-light border-rounded">
@@ -95,6 +96,19 @@ class AboutMe_L extends Component {
                                     I am pertaining my graduation at Ahmedabad University (School: School of Engineering And Science (SEAS)).<br />
                                     I undertaken my graduation in BTech Computer Scienc and Engineering.
                                 </h6>
+                            </CardBody>
+                        </Card>
+                        <Card style={{ borderColor: "#8601af" }} className=" d-flex justify-content-center">
+                            <CardHeader style={{ backgroundColor: "#32174d" }}>
+                                <h3 className="d-flex justify-content-center text-light">Skills</h3>
+                            </CardHeader>
+                            <CardBody className="row bg_dp" style={{ borderColor: "#8601af" }}>
+                                <div className="text-light">
+                                    <li>Node.js</li>
+                                    <li>React.js</li>
+                                    <li>Java</li>
+                                    <li>C, Cpp</li>
+                                </div>
                             </CardBody>
                         </Card>
                         <Card style={{ borderColor: "#8601af" }}>
